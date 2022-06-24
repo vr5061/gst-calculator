@@ -1,0 +1,22 @@
+#include <stdio.h>
+int gst;
+int gstc(int n) 
+{
+    gst=(18*n)/100;
+    return gst;
+}
+int main()
+{
+    int t;
+    printf("Enter the number of cases:\n");
+    scanf("%d", &t);
+    while(t--)
+    {
+        int n;
+        printf("Enter the amount to be paid:\n");
+        scanf("%d", &n);
+        gstc(n);
+        printf("%d is the GST calculated and total amount to be paid is %d\n", gst, gst+n);
+    }
+    return 0;
+}
